@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.8.2",
-    "postcss": "^7.0.32",
     "tailwindcss": "^1.4.6"
   }
 }
