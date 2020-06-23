@@ -1,87 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/tailwind.css" />
     <title>Big Sur Mail</title>
-</head>
+  </head>
 
-<body class="bg-gray-700">
+  <body class="bg-gray-700">
     <div class="grid grid-cols-12 m-6">
-        <div class="col-span-2 bg-gray-300 p-4 rounded-l-lg">
-            <div class="flex flex-col space-y-5">
-                <div class="flex ml-1 space-x-3 opacity-75">
-                    <svg height="14" width="14">
-                        <circle cx="7" cy="7" r="7" fill="red" />
-                    </svg>
-                    <svg height="14" width="14">
-                        <circle cx="7" cy="7" r="7" fill="orange" />
-                    </svg>
-                    <svg height="14" width="14">
-                        <circle cx="7" cy="7" r="7" fill="green" />
-                    </svg>
-                </div>
-                <div class="mt-3 space-y-1">
-                    <h6 class="font-semibold opacity-50">Favorites</h6>
-                    <div class="flex justify-between items-center w-full px-3 bg-gray-400 rounded">
-                        <span class="flex">
-                            <svg class="w-6 h-6 text-blue-400 mr-1" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                <path
-                                    d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4">
-                                </path>
-                            </svg>
-                            <span>Inbox</span>
-                        </span>
-                        <span class="my-1 px-2 font-semibold text-gray-600 bg-gray-300 rounded-full">11</span>
-                    </div>
-                    <div class="flex px-3">
-                        <svg class="w-6 h-6 text-blue-400 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
-                        </svg>
-                        <div>Sent</div>
-                    </div>
-                </div>
-                <div class="mt-3 space-y-1">
-                    <h6 class="font-semibold opacity-50">Smart Mailboxes</h6>
-                    <div class="flex justify-between items-center mr-3">
-                        <div class="ml-3">Today</div>
-                        <span class="my-1 px-2 text-gray-600 font-semibold bg-gray-400 rounded-full">2</span>
-                    </div>
-                    <div class="ml-3">Important</div>
-                </div>
-                <div class="mt-3 space-y-1">
-                    <h6 class="font-semibold opacity-50">iCloud</h6>
-                    <div class="flex justify-between items-center mr-3">
-                        <div class="ml-3">Inbox</div>
-                        <span class="my-1 px-2 text-gray-600 font-semibold bg-gray-400 rounded-full">11</span>
-                    </div>
-                    <div class="ml-3">Drafts</div>
-                    <div class="ml-3">Sent</div>
-                    <div class="ml-3">Junk</div>
-                    <div class="ml-3">Trash</div>
-                    <div class="ml-3">Archive</div>
-                    <div class="flex justify-between items-center mr-3">
-                        <div class="ml-3">Keepers</div>
-                        <span class="my-1 px-2 text-gray-600 font-semibold bg-gray-400 rounded-full">1</span>
-                    </div>
-                    <div class="ml-3">Receipts</div>
-                    <div class="ml-3">School</div>
-                    <div class="ml-3">Travel</div>
-                </div>
+      <div class="col-span-2 bg-gray-300 p-4 rounded-l-lg">
+        <div class="flex flex-col space-y-5">
+          <div class="flex ml-1 space-x-3 opacity-75">
+            <svg height="14" width="14">
+              <circle cx="7" cy="7" r="7" fill="red" />
+            </svg>
+            <svg height="14" width="14">
+              <circle cx="7" cy="7" r="7" fill="orange" />
+            </svg>
+            <svg height="14" width="14">
+              <circle cx="7" cy="7" r="7" fill="green" />
+            </svg>
+          </div>
+          <div class="mt-3 space-y-1">
+            <h6 class="font-semibold opacity-50">Favorites</h6>
+            <div
+              class="flex justify-between items-center w-full px-3 bg-gray-400 rounded"
+            >
+              <span class="flex">
+                <svg
+                  class="w-6 h-6 text-blue-400 mr-1"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                  ></path>
+                </svg>
+                <span>Inbox</span>
+              </span>
+              <span
+                class="my-1 px-2 font-semibold text-gray-600 bg-gray-300 rounded-full"
+                >11</span
+              >
             </div>
+            <div class="flex px-3">
+              <svg
+                class="w-6 h-6 text-blue-400 mr-1"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
+                ></path>
+              </svg>
+              <div>Sent</div>
+            </div>
+          </div>
+          <div class="mt-3 space-y-1">
+            <h6 class="font-semibold opacity-50">Smart Mailboxes</h6>
+            <div class="flex justify-between items-center mr-3">
+              <div class="ml-3">Today</div>
+              <span
+                class="my-1 px-2 text-gray-600 font-semibold bg-gray-400 rounded-full"
+                >2</span
+              >
+            </div>
+            <div class="ml-3">Important</div>
+          </div>
+          <div class="mt-3 space-y-1">
+            <h6 class="font-semibold opacity-50">iCloud</h6>
+            <div class="flex justify-between items-center mr-3">
+              <div class="ml-3">Inbox</div>
+              <span
+                class="my-1 px-2 text-gray-600 font-semibold bg-gray-400 rounded-full"
+                >11</span
+              >
+            </div>
+            <div class="ml-3">Drafts</div>
+            <div class="ml-3">Sent</div>
+            <div class="ml-3">Junk</div>
+            <div class="ml-3">Trash</div>
+            <div class="ml-3">Archive</div>
+            <div class="flex justify-between items-center mr-3">
+              <div class="ml-3">Keepers</div>
+              <span
+                class="my-1 px-2 text-gray-600 font-semibold bg-gray-400 rounded-full"
+                >1</span
+              >
+            </div>
+            <div class="ml-3">Receipts</div>
+            <div class="ml-3">School</div>
+            <div class="ml-3">Travel</div>
+          </div>
         </div>
-        <div class="col-span-4 p-2 bg-gray-100">
-            <h3 class="font-semibold">Inbox</h3>
-            <span class="text-gray-600 text-sm">30 messages, 11 unread</span>
+      </div>
+      <div class="col-span-4 p-2 bg-gray-100">
+        <h3 class="font-semibold">Inbox</h3>
+        <span class="text-gray-600 text-sm">30 messages, 11 unread</span>
+        <div class="flex flex-col my-4">
+          <div class="h-20 pl-6 p-2 bg-gray-200 rounded">
+            <div class="flex justify-between">
+              <div class="font-semibold">
+                Eddy Bedock
+              </div>
+              <div class="text-sm text-gray-500">
+                9:11 AM
+              </div>
+            </div>
+            <div class="text-sm">
+              Riding in the Oakland Hills
+            </div>
+            <div class="text-sm text-gray-600">
+              Hey Craig, It's been great to have good riding weather lately,
+              perfect for getting back on the road!
+            </div>
+          </div>
+          <div class="h-20 pl-6 p-2 bg-gray-100 rounded">
+            <div class="flex justify-between">
+              <div class="flex items-center -ml-5">
+                <svg class="text-blue-500 mr-1" height="14" width="14">
+                  <circle cx="7" cy="7" r="5" fill="currentColor" />
+                </svg>
+                <div class="font-semibold">
+                  Lena Gallagher
+                </div>
+              </div>
+              <div class="text-sm text-gray-500">
+                7:40 AM
+              </div>
+            </div>
+            <div class="text-sm">
+              Ice Cream Tonight
+            </div>
+            <div class="text-sm text-gray-600">
+              Hi everyone, I'm so excited to see you all tonight. Parking can be tough so I would arrive early to give yourself some..
+            </div>
+          </div>
         </div>
-        <div class="col-span-6 bg-gray-100 rounded-r-lg">
-
-        </div>
+      </div>
+      <div class="col-span-6 bg-gray-100 rounded-r-lg"></div>
     </div>
-</body>
-
+  </body>
 </html>
